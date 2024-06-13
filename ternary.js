@@ -11,6 +11,7 @@ userType = (age < 18 )
     ? (isMember ? "minor member" : "minor non member")
     : (isMember ? "adult member" : "adult non member")
 
+
 // If age is under 18 and not a member, 'userType' should be "Minor Non-Member"
 // If age is under 18 and is a member, 'userType' should be "Minor Member"
 // If age is 18 or older and not a member, 'userType' should be "Adult Non-Member"
