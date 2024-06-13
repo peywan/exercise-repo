@@ -26,25 +26,25 @@ let currentVisitor = "john doe"
 
 */
 
-let name = "ilya";
-
-
-let age = prompt('age?', 18);
-
-let message = (age < 3) ? 'Hi, baby!' :
-    (age < 18) ? 'Hello!' :
-        (age < 100) ? 'Greetings!' :
-            'What an unusual age!';
-
-alert(message);
 
 
 
 // Step 1: Declare a variable 'age' and assign it a number value
+let peywanAge = prompt("peywan age?");
 
 // Step 2: Declare a variable 'canVote'
+let canVote
 
 // Step 3: Use the ternary operator to set 'canVote' to true if 'age' is 18 or older, and false otherwise
+
+canVote = (peywanAge < 3) ? "Hi, baby!" :
+    (peywanAge < 18) ? "hello you're almost 18 so not yet!" :
+        (peywanAge < 100) ? "Greetings!" :
+            "What an unusual age!";
+
+console.log(canVote);
+
+
 
 // Step 4: Use console.log to display whether the person can vote or not based on the value of 'canVote'
 
