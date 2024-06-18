@@ -11,16 +11,16 @@ console.log(document.head)
 //console.log(document.links)
 //console.log(document.images)
 
-
+/*
 //selectors GETELEMENTBYID
-
 console.log(document.getElementById('header-title'))
-
-
-let headerTitle = (document.getElementById('header-title'))
-
-
 console.log(headerTitle.innerText)
-
-
 headerTitle.innerHTML = '<h3>hello</h3>'
+//textcontect, innerhtml, innertext
+*/
+let headerTitle = (document.getElementById('header-title'))
+let header = (document.getElementById('main-header'))
+
+
+
+header.style.borderBottom = "solid 2px black"
