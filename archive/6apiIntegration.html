@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Integration</title>
+</head>
+<body>
+<h1>Data från API</h1>
+<div id="data-container"></div>
+
+<script>
+    async function fetchApiData() {
+        try {
+            let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+            if (!response.ok) {
+                throw new Error('Nätverksfel!');
+            }
+            let data = await response.json();
+            displayData(data);
+        } catch (error) {
+            console.error('Fel vid hämtning av data:', error);
+        }
+    }
+
+    function displayData(data) {
+        const container = document.getElementById('data-container');
+        data.forEach(item => {
+            const div = document.createElement('div');
+            div.textContent = `${item.title}`;
+            container.appendChild(div);
+        });
+    }
+
+    fetchApiData();
+</script>
+</body>
+</html>

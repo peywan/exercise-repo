@@ -2,7 +2,7 @@
 function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let success = true; // Ändra till false för att simulera ett fel
+            let success = true;
             if (success) {
                 resolve("Data hämtad framgångsrikt!");
             } else {
