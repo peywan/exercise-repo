@@ -18,9 +18,20 @@ console.log(headerTitle.innerText)
 headerTitle.innerHTML = '<h3>hello</h3>'
 //textcontect, innerhtml, innertext
 */
-let headerTitle = (document.getElementById('header-title'))
-let header = (document.getElementById('main-header'))
+
+//let headerTitle = (document.getElementById('header-title'))
+//let header = (document.getElementById('main-header'))
+//header.style.borderBottom = "solid 2px black"
 
 
+//GETELEMENTSBYCLASSNAME
 
-header.style.borderBottom = "solid 2px black"
+let items = document.getElementsByClassName('list-group-item')
+
+console.log(items);
+console.log(items[2]);
+items[2].textContent = "hello hello hello 2";
+items[2].style.fontWeight = 'bold';
+items[2].style.backgroundColor = "yellow";
+
+items.style.backgroundColor = "grey"
