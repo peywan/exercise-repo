@@ -194,13 +194,22 @@ console.log(newDiv)
 let button = document.getElementById("button");
 button.addEventListener('click', buttonClick);
 
-
-function buttonClick(e) {
+/*
+function buttonClick() {
     console.log("button clicked");
-    document.getElementById("header-title").textContent = "Hey Peywan  you clicked the button, magic! welcome to your to do list!"
-
+    document.getElementById("header-title").textContent = "Hey Peywan  you clicked the button, magic! welcome to your "to do list!""
     document.getElementById("header-title").style.backgroundColor = "red";
     document.querySelector("#main").style.backgroundColor ="red"
+}
+*/
+
+
+
+function buttonClick(e) {
+    //console.log(e)
+    //console.log(e.target.id)
+    //console.log(e.target.className)
+    console.log(e.target.classList)
 
 }
 
