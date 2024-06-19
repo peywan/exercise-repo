@@ -116,7 +116,41 @@ itemList.parentNode.style.backgroundColor = "lightGrey"
 console.log(itemList.parentNode.parentNode)
 */
 
+
+
+
+/*
 // PARENTELEMENT
 console.log(itemList.parentElement)
 itemList.parentElement.style.backgroundColor = "lightGrey"
 console.log(itemList.parentElement.parentElement)
+*/
+
+/*
+//ChildNodes
+//not good to use
+//console.log(itemList.childNodes)
+
+//better to use (html collection of nodelist) best practice.
+console.log(itemList.children)
+
+console.log(itemList.children[2])
+itemList.children[2].style.backgroundColor = "red"
+//not what you should use
+console.log(itemList.firstChild)
+//what you should use instead
+console.log(itemList.firstElementChild)
+
+itemList.firstElementChild.style.backgroundColor = " green"
+
+*/
+
+
+
+//nextSibling and nextElementSibling
+console.log(itemList.nextElementSibling)
+
+itemList.nextElementSibling.style.fontSize = "32px"
+
+
+//previousSibling
