@@ -146,11 +146,57 @@ itemList.firstElementChild.style.backgroundColor = " green"
 */
 
 
-
+/*
 //nextSibling and nextElementSibling
 console.log(itemList.nextElementSibling)
 
 itemList.nextElementSibling.style.fontSize = "32px"
+*/
 
-
+/*
 //previousSibling
+console.log(itemList.previousSibling)
+console.log(itemList.previousElementSibling)
+
+itemList.previousElementSibling.style.color = "blue"
+*/
+
+let newDiv = document.createElement("div");
+newDiv.className = "hello"
+
+
+//add id name to newDiv
+newDiv.id= "hello2"
+
+//add attribute
+newDiv.setAttribute("title", "hello div")
+
+
+//create text node
+let newDivText = document.createTextNode("the new div text")
+
+//add text to div
+newDiv.appendChild(newDivText)
+
+
+//put the newDiv to the dom
+let insideContainer = document.querySelector("header .container")
+let h1 = document.querySelector("header h1")
+
+insideContainer.insertBefore(newDiv, h1)
+
+
+
+newDiv.style.fontSize = "26px"
+
+console.log(newDiv)
+
+
+
+
+
+/// very import for interactive - mouse events, key events  interactive javascript event listeners and such.
+
+
+
+
