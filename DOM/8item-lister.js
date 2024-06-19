@@ -192,13 +192,19 @@ console.log(newDiv)
 
 
 let button = document.getElementById("button");
-button.addEventListener('click', function () {
-    console.log("123");
-});
+button.addEventListener('click', buttonClick);
 
 
-function buttonClick() {
+function buttonClick(e) {
     console.log("button clicked");
+    document.getElementById("header-title").textContent = "Hey Peywan  you clicked the button, magic! welcome to your to do list!"
+
+    document.getElementById("header-title").style.backgroundColor = "red";
+    document.querySelector("#main").style.backgroundColor ="red"
+
 }
+
+
+
 
 
