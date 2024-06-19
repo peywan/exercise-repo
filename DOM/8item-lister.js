@@ -209,9 +209,15 @@ function buttonClick(e) {
     //console.log(e)
     //console.log(e.target.id)
     //console.log(e.target.className)
-    console.log(e.target.classList)
-
+    //console.log(e.target.classList)
+    let output = document.getElementById("output")
+    //console.log(e.clientX)
+    //console.log(e.clientY)
+    //console.log(e.offsetX)
+    //console.log(e.shiftKey)
 }
+
+
 
 
 
