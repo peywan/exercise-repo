@@ -103,10 +103,6 @@ for(let i = 0; i < odd.length; i++){
 */
 
 
-
-
-
-
 //traversing the dom
 let itemList = document.querySelector("#items")
 //parent node property.
@@ -115,8 +111,6 @@ console.log(itemList.parentNode)
 itemList.parentNode.style.backgroundColor = "lightGrey"
 console.log(itemList.parentNode.parentNode)
 */
-
-
 
 
 /*
@@ -160,7 +154,7 @@ console.log(itemList.previousElementSibling)
 
 itemList.previousElementSibling.style.color = "blue"
 */
-
+/*
 let newDiv = document.createElement("div");
 newDiv.className = "hello"
 
@@ -191,12 +185,20 @@ newDiv.style.fontSize = "26px"
 
 console.log(newDiv)
 
-
-
+*/
 
 
 /// very import for interactive - mouse events, key events  interactive javascript event listeners and such.
 
 
+let button = document.getElementById("button");
+button.addEventListener('click', function () {
+    console.log("123");
+});
+
+
+function buttonClick() {
+    console.log("button clicked");
+}
 
 
