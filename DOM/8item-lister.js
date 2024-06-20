@@ -191,8 +191,8 @@ console.log(newDiv)
 /// very import for interactive - mouse events, key events  interactive javascript event listeners and such.
 
 
-let button = document.getElementById("button");
-button.addEventListener('click', buttonClick);
+// let button = document.getElementById("button");
+//button.addEventListener('click', buttonClick);
 
 /*
 function buttonClick() {
@@ -218,4 +218,53 @@ function buttonClick(e) {
 }
 */
 
+let button = document.getElementById('button')
+let box = document.getElementById('box')
+
+//button.addEventListener('click', runEvent)
+//button.addEventListener('dblclick', runEvent)
+//button.addEventListener('mousedown', runEvent)
+//button.addEventListener('mouseup', runEvent)
+
+
+//box.addEventListener("mouseenter", runEvent )
+//box.addEventListener("mouseleave", runEvent )
+//box.addEventListener("mouseover", runEvent )
+//box.addEventListener("mouseleave", runEvent )
+
+//box.addEventListener("mousemove", runEvent )
+
+
+
+let input = document.querySelector("input[type='text']");
+let form = document.querySelector("form")
+
+
+//input.addEventListener('keydown', runEvent)
+//input.addEventListener('keyup', runEvent)
+//input.addEventListener('keypress', runEvent)
+
+//input.addEventListener('focus', runEvent)
+//input.addEventListener('blur', runEvent)
+
+//input.addEventListener('cut', runEvent)
+//input.addEventListener('paste', runEvent)
+//input.addEventListener('input', runEvent)
+
+let select = document.querySelector("select")
+//select.addEventListener("change", runEvent)
+//select.addEventListener("input", runEvent)
+
+form.addEventListener("submit", runEvent)
+
+function runEvent(e) {
+    console.log('EVENT TYPE: ' +e.type);
+    e.preventDefault()
+    //console.log(e.target.value)
+    //document.getElementById("output").innerHTML = "<h3>"+e.target.value+" </h3>"
+    //output.innerHTML = '<h3>MouseX: ' +e.offsetX+' </h3><h3></h3>mouseY: '+e.offsetY+'<h3>';
+    //document.body.style.backgroundColor = "rgb("+e.offsetX+", "+e.offsetY+", 40)"
+    //document.body.style.display = "none"
+
+}
 
