@@ -6,6 +6,4 @@ form.addEventListener("submit", addItem)
 
 function addItem(e){
     e.preventDefault();
-
-    console.log(1)
 }
